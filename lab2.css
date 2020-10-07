@@ -1,0 +1,37 @@
+body{
+    font-family: "Times New Roman";
+    text-align: left;
+    width: 700px;
+    margin: 120px 10% 100px 25%;
+}
+p{
+    font-size: 18px;
+}
+h2{
+    font-size: 18px
+}
+b{
+    font-size: 18px;
+}
+.a b {
+    font-size: 18px;
+    margin-left: -16px;
+}
+.c {
+    text-align: center;
+}
+.a{
+    margin-left: 15px;
+    padding-left: 0px;
+}
+.b li {
+    list-style-type: none;
+    text-align: left;
+    display: inline-table;
+    padding-right: 45px;
+    font-weight: 1000;
+    margin-top: 10px;
+}
+.b{
+    margin-left: -40px;
+}

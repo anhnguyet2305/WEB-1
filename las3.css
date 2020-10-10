@@ -1,9 +1,10 @@
 body{
     background: url("https://mtrend.vn/wp-content/uploads/2019/05/hinh-nen-galaxy-may-tinh.jpg");
     width: 1000px;
-    margin: 0px auto;
+    margin: auto;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
+
 }
 .MAIN {
     margin-top: 40px;
@@ -93,7 +94,6 @@ body{
 .header2-1>p {
     font-size: 25px;
 }
-
 .b{
     margin-left: -2px;
     margin-top: 30px;

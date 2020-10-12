@@ -25,7 +25,7 @@ body{
     font-size: 15px;
 }
 #main{
-    height: 1000px;
+    height: 1050px;
     background-color: whitesmoke;
 }
 #main .profile{
@@ -57,8 +57,8 @@ body{
 #left{
     float: none;
     width: 300px;
-    height: 1160px;
-    margin-top: -1180px;
+    height: 1200px;
+    margin-top: -1220px;
     background-color: #dfe5e9;
     margin-left: 50px;
     padding-bottom: 20px;

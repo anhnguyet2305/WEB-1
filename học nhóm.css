@@ -4,26 +4,24 @@ body {
     border-radius: 20px;
 
 }
-#Main_1{
-    width: 500px;
-    text-align: center;
-    margin: auto;
-}
 .header1 {
     font-size: 25px;
     font-weight: 500;
+    text-align: center;
+    padding-bottom: -5px;
 }
 #main_1 {
     border-bottom: 3px solid black;
     width: 60px;
     margin: 0px auto;
-    margin-top: -10px;
 }
 .a {
     margin: -3px;
+    margin-left: 424px;
 }
 .b {
     margin: -2px;
+    margin-left: 790px;
 }
 #main_1-1 {
     width: 265px;

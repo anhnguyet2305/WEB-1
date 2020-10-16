@@ -140,6 +140,10 @@ img{
     margin-left: 10px;
     margin-top: 10px;
     font-size: 20px;
+
+}
+.icon1 a {
+    color: #242424;
 }
 .search {
     width: 100%;

@@ -4,12 +4,18 @@
     box-sizing: border-box;
 }
 body{
+    background-color: black;
+}
+#main {
+    width: 1530px;
+    margin: 0 auto;
     background-color: #ffffff;
     color: #242424;
     font-size: 14px;
     line-height: 1.25;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
+
 }
 .container{
     width: 78%;

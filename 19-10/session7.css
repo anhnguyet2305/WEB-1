@@ -156,7 +156,7 @@ body{
     margin-top: 30px;
 }
 .section_1 a{
-    font-size: 25px;
+    font-size: 23px;
     color: black;
 }
 .section_1 span{
@@ -165,7 +165,7 @@ body{
     opacity: 0.8;
 }
 .section_1 span b {
-    font-size: 25px;
+    font-size: 23px;
     color: #30A8D5;
 }
 .section_2 {
@@ -333,7 +333,7 @@ footer {
 }
 .footer_2 ul li{
     list-style: none;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 2;
 }
 .footer_2 ul li a{
@@ -361,7 +361,7 @@ footer {
 }
 .footer_3 ul li{
     list-style: none;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 2;
     color: silver;
 }
@@ -373,7 +373,7 @@ footer {
 }
 .footer_3-2{
     color: #ffffff;
-    font-size: 18px;
+    font-size: 16px;
 }
 .footer_3-2:hover{
     color: #30A8D5;

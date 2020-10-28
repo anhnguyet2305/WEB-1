@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo JS with DOM</title>
+</head>
+<body>
+    <h1 id="heading1">Hello World!</h1>
+    <img id="img01" src="../imgs/1.png" alt="">
+    <div id="logo"></div>
+    <script type="text/javascript">
+        function changeText() {
+            var head1 = document.getElementById("heading1");  // head1 đại diện cho thẻ h1
+            head1.innerText = "Good Morning!";
+            head1.style.color = "red";
+            head1.style.fontSize = "30px";
+            head1.style.backgroundColor = "orange";
+
+
+            //Kiem tra
+            if(head1.classList.contains("heading")){
+                //Xoa class
+                head1.classList.remove("heading");
+            }else {
+                // Thêm class
+                head1.classList.add("heading");
+            }
+
+
+            //tác động đến img01
+            var im1 = document.getElementById("img01");
+            im1.src = "../imgs/2.png"
+            im1.style.display = "none"; //tat
+            im1.style.display = "block"; //hien
+
+        }
+
+        //Thực thi hàm sau 3s
+        setTimeout(changeText,3000);
+
+        function AnHien() {
+            var im1 = document.getElementById("img01");
+            if (im1.style.display == "none"){
+                im1.style.display = "block";
+            }else {
+                im1.style.display = "none";
+            }
+        }
+        setInterval(AnHien,10);
+
+
+        // function logo() {
+        //     var lg = document.getElementById("logo");
+        //     var ct = "<a href=\"#\"><img src=\"../imgs/01.png/"></a>";
+        //     lg.innerHTML = ct;
+        //     im1.style.display = "none"; //tat
+        //     im1.style.display = "block"; //hien
+        //
+        // }
+        // setTimeout(logo,1000);
+
+
+    </script>
+</body>
+</html>

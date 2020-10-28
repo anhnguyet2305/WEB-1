@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // function canhbao() { //khai báo
+        //     // alert("Canh bao nguy hiem");
+        //     console.log("cảnh báo nguy hiểm");
+        // }
+        //tạo thời gian
+
+        //canhbao(); thực thi hàm
+
+        // gọi bằng tên hàm
+        // setTimeout(canhbao,3000);
+
+        //hàm ẩn danh
+        // setTimeout(function () {
+        //     alert("Canh bao nguy hiem");
+        // },3000);
+
+        // setInterval(canhbao,3000); // chạy vô hạn
+
+
+
+        // const Clock = function () { //khai báo hàm kiểu mới
+        //     console.log("8:40");
+        // }
+        // Clock(); //thực thi hàm
+        //
+
+        var min=2, sec = 0;
+        var Clock = function () { //khai báo hàm kiểu mới
+            console.log(min+":"+sec);
+            sec--;
+            if(sec < 0){
+                sec = 59;
+                min--;
+            }
+            if(min < 0){
+                clearInterval(time); //bom nổ
+            }
+        }
+         var time = setInterval(Clock,100);
+
+        //Viết hàm theo kiểu arrow function
+        var tinhtong = (a,b)=>{
+            return a+b;
+        }
+
+
+    </script>
+</body>
+</html>

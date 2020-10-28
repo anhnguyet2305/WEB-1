@@ -1,0 +1,48 @@
+*{
+    width: 90%;
+    margin: auto;
+}
+body{
+    background-color: #d6e9c6;
+    color: #777777;
+    font-size: 14px;
+    line-height: 1.15;
+    /*độ cao của dòng    */
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+div {
+    width: 350px;
+    height: 500 px;
+    /*width: calc(25% -62px);*/
+    /*tính toán đơn vị lệch nhau*/
+    border: 1px solid rebeccapurple;
+    padding: 10px 10px 10px 40px;
+    /*padding: ; làm dãn đường viền */
+    float: left;
+    margin: 20px;
+    box-sizing: border-box; /*chỉ được sử dụng tối đa 350px */
+    overflow: hidden;
+    text-shadow: 0px 0px 5px#777777; /* bóng của chữ */
+    box-shadow: 0px 0px 5px #337ab7; /*bóng của hộp */
+    border-radius: 5px; /*cắt góc hộp */
+    background-color: #ffffff;
+}
+img{
+    max-width: 100%;
+}
+#nt1 {
+    width: 50px;
+    height: 50px;
+    background-color: #8B6914;
+    border-radius: 100%;
+    /*làm hình tròn*/
+
+}
+.center {
+    float: none;
+    width: 200px;
+    background-color: #8B6914;
+    margin: 10px auto;
+    /*tạo hình ở trong hình*/
+}

@@ -43,3 +43,7 @@ body {
 .header1-2>p {
     padding-top: 5px;
 }
+.header1-2:hover {
+    transform: rotate(360deg);
+    background-color: orange;
+}

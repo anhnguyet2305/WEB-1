@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //VietLot
+    var lucky = [];//Mang 5 so ngau nhien khong trung nhau
+    for (let i=0;i<5;i++){
+        let x;
+        do{
+            x = parseInt(Math.random()*100);
+        }while (lucky.includes(x) || isNaN(x));
+        lucky[i] = x;
+    }
+
+    console.log(lucky);
+
+    var myNumbers = []; // Mang 5 so lua chọn không trùng
+    for (let i=0;i<5;i++){
+        let x;
+        do{
+            x = prompt("Nhap so may man");
+            x = parseInt(x);
+        }while (myNumbers.includes(x) || isNaN(x));
+        // myNumbers[i] = x;
+        myNumbers.push(x);
+    }
+
+    //Kiem tra xem co trung giai hay khong
+    let  soluong = 0;
+    for (let i=0;i<5;i++){
+        if (lucky.includes(myNumbers[i]))
+            soluong++;
+    }
+    if(soluong == 5){
+        alert("Chuc mung da chung thuong 100 ty")
+    }else {
+        alert("Ra đê mà ở")
+    }
+</script>
+</body>
+</html>

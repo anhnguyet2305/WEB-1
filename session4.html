@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>From</title>
+    <link rel="stylesheet" href="session4_from.css">
+</head>
+<body>
+
+    <div class="main1">
+<!--        action : máy chủ-->
+<!--        get : dữ liệu link-->
+
+      <form action="#" method="post">
+<!--                code điền thông tin-->
+          <input name="full_name" type="text" minlength="5" maxlength="10" placeholder="Full_name" required/>
+<!--                code nhập email-->
+          <input name="email" type="email" placeholder="Email" required/>
+<!--                code nhập mật khẩu-->
+          <input name="password" type="password" placeholder="Password" required/>
+<!--                code căn cước công nhân    -->
+          <input name="age" min="18" max="60" type="number" placeholder="Age" />
+<!--                code ngày tháng năm-->
+          <input name="brithday" type="date" placeholder="Brithday" />
+<!--                code sdt-->
+          <input name="datatime" type="tel" placeholder="phone"/>
+<!--                code màu sắc-->
+          <input name="mycolor" type="color" placeholder="My color"/>
+<!--                code min max-->
+          <input name="price_range" type="range" min="0" max="100"/>
+<!--                code giới tính-->
+<!--                nút tích tròn -->
+          <p>Giới Tính</p>
+              <label> <input name="sex" value="nam" checked type="radio"/>Nam</label>
+              <label> <input name="sex" value="nu" type="radio"/>Nữ</label>
+              <label>  <input name="sex" value="khac" type="radio"/>Khác</label>
+<!--                code tôi chấp nhận điều khoản-->
+          <p>
+              <label><input required name="confirm" checked type="checkbox"/>tôi chấp nhận điều khoản</label>
+          </p>
+<!--                 code lựa chọn thành phố-->
+          <p>Thành Phố</p>
+          <select name="city">
+              <option value="hn">Hà Nội</option>
+              <option value="sg">Sài Gòn</option>
+              <option value="ct">Cần Thơ</option>
+              <option value="dn">Đà Nẵng</option>
+          </select>
+<!--          Code chát không tối thiểu-->
+        <p>Nhận Xét :</p>
+          <textarea name="comment" rows="10" cols="50" placeholder="Viết nhận xét của bạn..."></textarea><br/>
+
+          <button type="submit">Gửi đi</button>
+          <button type="button">Botton</button>
+          <button type="reset" >Reset</button>
+      </form>
+    </div>
+</body>
+</html>

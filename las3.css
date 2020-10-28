@@ -14,7 +14,6 @@ body{
     width: 1000px;
     height: 190px;
     line-height: 0.45;
-
 }
 .header1{
     margin: 0px;
@@ -32,7 +31,7 @@ body{
     height: 930px;
 }
 .header3 {
-    margin: 0px;
+    /*margin: 0px;*/
     width: 650px;
     float: right;
     margin-top: 25px;

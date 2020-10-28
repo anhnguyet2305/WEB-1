@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+
+    do{
+        var x = prompt("Nhap so may man : ");
+        x = parseInt(x);
+
+    }while (x<0 || x > 99 || isNaN(x));
+
+    do{
+        var ar = [];
+        for(let i=0;i<5;i++) {
+            ar[i] = vietlot;
+            var vietlot = parseInt(Math.random() * 100);
+            vietlot = parseInt(vietlot);
+            console.log(vietlot);
+        }
+    }while (vietlot<0 || vietlot>99 || isNaN(vietlot))
+
+    if(x == vietlot){
+        alert("Chuc mung ban da trung thuong")
+    }else {
+        alert("Chuc ban may man lan sau")
+    }
+
+    // do{
+    //     var luckynumber = parseInt(Math.random()*100);
+    //     luckynumber = parseInt(luckynumber);
+    // }while (luckynumber<0 || luckynumber > 100 || isNaN(luckynumber));
+    // console.log(luckynumber);
+
+
+
+    // // yeu cau nguoi dung phai nhap 5 so
+    //
+    // do{
+    //     var x = prompt("Nhap 5 so may man : ");
+    //     x = parseInt(x);
+    // }while (x<0 || x > 99999 || isNaN(x));
+    // console.log(x);
+    //
+    // // tao 1 so ngau nhien trong 0-99
+    // var luckynumber = parseInt(Math.random()*100);
+    //
+    // //thong bao ket qua trung thuong
+    // if(x == luckynumber){
+    //     alert("Chuc mung ban da trung thuong")
+    // }else {
+    //     alert("Chuc ban may man lan sau")
+    // }
+</script>
+</body>
+</html>

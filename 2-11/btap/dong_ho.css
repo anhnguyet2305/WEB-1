@@ -1,0 +1,48 @@
+#dong_ho{
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    background: #FFA17F;
+    background: -webkit-linear-gradient(to right, #00223E, #FFA17F);
+    background: linear-gradient(to right, #00223E, #FFA17F);
+    text-align: center;
+}
+.nhap_so_phut{
+    margin-top: 40px;
+    width: 70%;
+    height: 30px;
+}
+.nhap_so_giay{
+    margin-top: 5px;
+    width: 70%;
+    height: 30px;
+}
+
+.start{
+    margin-top: 20px;
+    width: 70%;
+    height: 30px;
+}
+.thoi_gian{
+    margin-top: 50px;
+}
+#m{
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 50px;
+    background: #2196f3;
+    color: white;
+
+}
+#s{
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 50px;
+    background: #c7254e;
+    color: white;
+}
+.Ket_thuc{
+    margin-top: 50px;
+    width: 70%;
+    height: 30px;
+}

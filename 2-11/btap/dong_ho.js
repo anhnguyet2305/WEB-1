@@ -1,0 +1,34 @@
+
+var m = null; // Phút
+var s = null; // Giây
+
+var timeout = null; // Timeout
+
+function start()
+{
+    if (m === null)
+    {
+        m = parseInt(document.getElementById('m_val').value);
+        s = parseInt(document.getElementById('s_val').value);
+    }
+    if (s === -1){
+        m -= 1;
+        s = 59;
+    }
+
+    if (m === -1){
+        h -= 1;
+        m = 59;
+    }
+    document.getElementById('m').innerText = m.toString();
+    document.getElementById('s').innerText = s.toString();
+
+    timeout = setTimeout(function(){
+        s--;
+        start();
+    }, 1000);
+}
+
+function stop(){
+    clearTimeout(timeout);
+}

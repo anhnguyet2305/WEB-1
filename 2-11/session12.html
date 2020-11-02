@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Event</title>
+    <link rel="stylesheet" href="session12.css">
+    <script src="session12.js"></script>
+</head>
+<body>
+    <div id="box" onmouseenter="hover1(this)" onmouseleave="hover2(this)"></div>
+    <button type="button" onclick="click1(this)">Click</button>
+    <input type="text" name="UserName"
+           placeholder="UserName..."
+           onkeydown="key1(this)"
+           onkeyup="key2(this)"
+           onkeypress="key3(this)"
+           oncopy="cop1();"
+           oncut="cop1();"
+           onpaste="con1();"
+    />
+
+
+    <select name="city" onchange="change1(this)">
+        <option value="1">value 1</option>
+        <option value="2">Ha noi</option>
+        <option value="3">value 3</option>
+        <option value="4">value 4</option>
+    </select>
+</body>
+</html>

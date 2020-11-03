@@ -33,9 +33,9 @@ function ClockTime() {
     var spanMinute= document.getElementById("minute");
     var spanSecond= document.getElementById("second");
     setInterval(function () {
-        spanHour.innerText = h;
-        spanMinute.innerText=m;
-        spanSecond.innerText= s;
+        spanHour.innerText = h>=10?h:"0"+h;
+        spanMinute.innerText=m>=10?m:"0"+m;
+        spanSecond.innerText= s>=10?s:"0"+s;
         s++;
         if(s>59){
             s=0;

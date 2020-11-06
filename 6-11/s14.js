@@ -1,44 +1,4 @@
-var products = [
-
-    {
-        name:"Flying Ninja",
-        image:"product.jpg",
-        price: 12,
-        star:4
-    },
-    {
-        name:"Flying Ninja",
-        image:"product.jpg",
-        price: 12,
-        star:4.5
-    },
-    {
-        name:"Flying Ninja",
-        image:"product.jpg",
-        price: 12,
-        star:3.5
-    },
-    {
-        name:"Flying Ninja",
-        image:"product.jpg",
-        price: 12,
-        star:2.5
-    },
-    {
-        name:"Flying Ninja",
-        image:"product.jpg",
-        price: 12,
-        star:1.5
-    },
-    {
-        name:"Flying Ninja",
-        image:"product.jpg",
-        price: 12,
-        star:4.5
-    },
-
-]
-function gridProduct() {
+function gridProduct(products) {
     var g_html = "";
     for (var i=0;i<products.length;i++){
         g_html += "<div class=\"col-md-4\">\n" +
@@ -58,5 +18,19 @@ function gridProduct() {
 
     return g_html;
 }
-var grid = document.getElementById("s13");
-grid.innerHTML = gridProduct();
+function loadData() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if(this.readyState == 4 && this.status == 200){
+            var rs = this.responseText; // nhan text/json tu api
+            rs = JSON.parse(rs);// chuyen thanh object json
+            var products = rs.data;
+            // in html ra danh sach
+            var grid = document.getElementById("grid-products");
+            grid.innerHTML = gridProduct(products);
+        }
+    }
+    xhttp.open("GET","https://foodgroup.herokuapp.com/api/today-special");
+    xhttp.send();
+}
+loadData(); 
